@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-violet-300">
+    <header class="text-center mt-24">
+      <h2 class="text-4xl font-semibold capitalize">
+        log in your bank account
+      </h2>
+    </header>
+    <main>
+      <section class="mt-10">
+        <div class="m-auto w-6/12 bg-slate-50 p-16 rounded-lg">
+          <input
+            id="email"
+            class="bg-white py-2 px-5 border-2 rounded-3xl w-full mb-5"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <input
+            id="password"
+            class="bg-white py-2 px-5 border-2 rounded-3xl w-full mb-5"
+            type="password"
+            placeholder="Password ( mybank )"
+          />
+          <button
+            id="login-btn"
+            class="bg-orange-400 px-10 py-2 rounded-3xl text-gray-100 font-semibold capitalize outline-none"
+          >
+            log in
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
