@@ -14,7 +14,7 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
 
   newDepositElement.value = "";
   if (isNaN(newDeposit)) {
-    return alert("Please provide us a valid number");
+    return alert("Please provide us a valid amount");
   }
 
   prevDepositElement.innerText = prevDeposit + newDeposit;
@@ -40,7 +40,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   newWithdrawElement.value = "";
 
   if (isNaN(newWithdraw)) {
-    return alert("Please provide us a valid number");
+    return alert("Please provide us a valid amount");
   } else if (newWithdraw > prevBalance) {
     alert(`sorry.... You have $${prevBalance}`);
     return;
